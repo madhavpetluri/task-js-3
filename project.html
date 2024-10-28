@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jevelin</title>
+    <style>
+    
+        
+        .el3,.el5,.el7{
+            border:1px solid rgba(255, 255, 255, 0.541);
+            height:100vh;
+        }
+        .el1{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color:rgb(241, 226, 204);
+            color: black;
+            text-decoration: none;
+            
+
+        }
+        .el1a{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .el1b{
+            justify-content: space-evenly;
+            text-decoration: none;
+           
+        }
+
+            
+        ul{
+           display:flex;
+            
+        }
+
+        ul li{
+            list-style-type:none;
+            padding: 5px;
+         
+        }
+        img{
+            width: 100%;
+           
+        }
+        .el2{
+            padding:10%;
+            height: 90%;
+            background-color: whitesmoke;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        .el2a{
+            height: 100%;
+        }
+        .el2a>h1>p{
+            padding: 20px 1px;
+        }
+        .el2a>button{
+            background-color: black;
+            color: white;
+        }   
+        .el2b>h3{
+            text-align: center; 
+        }
+        .el2b{
+            height: 60%;
+        }
+
+         .el4{
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .el4a>img{
+            width: 200px;
+            font-weight: 200px;
+            justify-content: center;
+            
+        }
+        .el4a>.img-comp-slider{
+            position: relative;
+            z-index: 5;
+            cursor: ew-resize;
+            width: 40px;
+            height: 40px;
+        }
+        .el4b{
+            padding: 10px;
+            font-size: large;
+        
+        }
+        .el6>button{
+            background-color:black;
+            color: white;
+            display: flex;
+        
+        }
+        .el6a>h1{
+            text-align: center;
+        }
+        .el7>h1{
+            text-align: center;
+
+
+        }
+        .el7{
+            text-decoration: none;
+        }
+    
+        .el7>img{
+           box-sizing: border-box;
+           flex-wrap: wrap;
+           box-shadow: 3px 4px 0px slategrey;
+           cursor: pointer;
+           transition: 300ms;
+         }
+         .el7>img:hover{
+            filter: grayscale(1);
+            transform: scale(1.03);
+            text-decoration: none;
+
+         }
+         .column{
+            float: left;
+            width: 24%;
+            padding: 5px;
+
+         }
+         .row::after{
+            display: flex;
+            clear: both;
+         }
+         .el8{
+            text-align: center;
+            text-decoration: none;
+         }
+         .el8>input{
+            margin: 8px;
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+
+         }
+         .el8>button{
+            background-color: black;
+            color: white;
+            display: inline-flexbox; 
+         } 
+        .el8>form{
+            display: ruby-base ;
+        }
+        .el5{
+            padding: 10px;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           
+        }
+        .el5a>img{
+            width: 10%;
+            text-align: center;
+        }
+        .el5b>img{
+            width: 10%;
+            text-align: center;
+            justify-content: center;
+        }
+        .el5c>img{
+            width: 10%;
+            text-align: center;
+            justify-content: center;
+        }
+        .el9{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+        
+        .el9a>img{
+            width: 5%;
+        }
+        .el9a>p{
+            justify-content: space-between;
+        }
+        .el9b>img{
+            width: 20%;
+            float: left;
+        } 
+        .el3{
+            display: flex;
+            justify-content: center;
+           
+        }
+    
+        .el3a{
+            background-image: url(https://image.slidesdocs.com/responsive-images/background/clean-nature-leaves-line-white-plant-powerpoint-background_44e67c5eed__960_540.jpg);
+            width: 1000%;
+            height: 60%;
+            padding: 1px;
+          
+        }
+        .el3a>img{
+            width: 10%;
+            image-orientation: from-image;
+        }
+        .el3b{
+            background-image: url(https://wallpaperaccess.com/full/4685440.jpg);
+            width: 1000%;
+            height: 60%;
+            padding:1px ;
+            
+        }
+        .el3b>img{
+            width: 100%;
+            color: white;
+            image-orientation: from-image;
+        }
+        .el3b>button{
+            background-color: rgb(93, 45, 13);
+        }
+
+        .el3c{
+            background-image: url(https://wallpapercave.com/wp/wp2163478.jpg);
+            width: 1000%;
+            height: 60%;
+            padding: 1px;
+            color: white;
+        }
+        .el3c>button{ 
+            background-color: orange;
+            color: white;
+            
+        }
+        .el3d{
+            width: 300px;
+            height: 50px;
+            display: flex;
+            
+        }
+        .el1c{
+            width: 2%;
+            display:flex;
+            justify-items: center;
+        }
+        .el2>div>p{
+            align-content: center;
+
+        }
+        .el2b:hover{
+            background:url("inside-weather-E5lK_COkD2E-unsplash-copy.jpg")
+            0  45px
+        }
+    </style>
+</head>
+<body>
+   <div class="el1">
+    <div class="el1a">
+        <h1>Jevelin</h1>
+        <div class="el1b">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Decor</a></li>
+                <li><a href="">Plant</a></li>
+                <li><a href="">Light</a></li>
+                <li><a href="">Chair</a></li>
+             
+            </ul> 
+        </div>
+    </div> 
+   </div>
+   <div class="el2">
+    <div class="el2a">
+        <button class="btn">New collection</button>
+        <h1>Fill your home with uniqueness</h1>
+        <p>Huge variety with modern glamour!</p>
+    </div>
+    <div class="el2b">
+        <img src="c:\Users\madhava venkata sai\Downloads\inside-weather-E5lK_COkD2E-unsplash-copy.jpg" alt="">
+    </div>
+    <div>
+        
+            <!-- <h3>! Use discount code: FIRSTIME to get 10% off your first order !</h3> -->
+        
+    </div>
+   </div>
+   <div>
+   <p class="item3">! Use discount code: FIRSTIME to get <a href="" style="color: rgb(255, 122, 18);"
+    style="font-size: 1rem;"> 10% off </a> your first order !</p>
+   </div>
+    <div class="el3">  
+    <div class="el3a">
+        <button class="btn">New collection</button>
+        <h1>Light&</h1>
+        <h1> Decor</h1>
+        <button>Show more ></button>
+        <img src="https://image.slidesdocs.com/responsive-images/background/clean-nature-leaves-line-white-plant-powerpoint-background_44e67c5eed__960_540.jpg" alt="">
+        <img src="" alt="">
+    </div>
+    <div class="el3b">
+        <img src="https://wallpaperaccess.com/full/4685440.jpg" alt="">
+       <h1>Kitchen Cutlery</h1>
+       <button>Show more ></button>
+    </div>
+    <div class="el3c">
+        <button class="btn">Sale</button>
+        <h1>Living Room</h1>
+        <button class="btn  Show more">Show more></button>
+        <img src="https://wallpapercave.com/wp/wp2163478.jpg" alt="">
+    </div>
+    </div>
+    <div class="el3d">
+
+
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\Partners6-copy.png" >
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\Partners1-copy.png" >
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\Partners4-copy.png" >
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\Partners2-copy.png" >
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\Partners3-copy.png" >
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\Partners5-copy.png" >
+      </div>
+
+
+   </div>
+    
+   <div class="el4">
+        <div class="el4a">
+            
+                    <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\Ellipse-622-copy-3.png" width="300" height="500">
+            
+                
+        </div>
+        <div class="el4b">
+            <h5>Our special offer</h5>
+            <h1>Featured products with </h1>
+            <h1>amazing color variety for </h1>
+            <h1>your home</h1>
+            <button class="btn">Purchase</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+   <div class="el5">
+    <div class="el5a">
+        <img src="c:\Users\madhava venkata sai\Downloads\clock-with-white-face.png" alt="">
+        <h4>24 h Shipping</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.</p>
+    </div>
+        <div class="el5b">
+            <img src="c:\Users\madhava venkata sai\Downloads\transport (1).png" alt="">
+            <h4>Free Returns</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.</p>
+        </div>
+        <div class="el5c">
+            <img src="c:\Users\madhava venkata sai\Downloads\wallet.png" alt="">
+            <h4>100% Money Back Guarantee</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.</p>
+        </div>
+   </div>
+   <div class="el6">
+    <div class="el6a">
+    <h1>Ideas for inspiration</h1>
+    <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\Hue_Saturation-2.jpg" alt="">
+    </div>
+    <div class="el6b">
+    <h1>Find the closest store to your location</h1>
+   <p>Quisque ut aliquam nunc, at finibus ante. Sed dignissim, nulla a fermentum egestas, odio</p>
+   <button class="btn">Find now</button>
+    </div>
+</div>
+   <div class="el7">
+    <h1>Great deals for great prices</h1>
+    <div class="row">
+        <div class="column">
+           
+                <a href=""><img width="250" height="250" src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0011_jeremy-lwanga-uUwEAW5jFLE-unsplash-300x300.jpg"  /> </a>
+          
+        <h4>Table succulent plant</h4>
+        <div class="btn btn-primary">£5.00</div>
+        </div>
+        <div class="column">
+            
+               <a href=""> <img width="250" height="250" src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0010_sincerely-media-VDPauwJ_sHo-unsplash-300x300.jpg" /> 
+               </a>
+           
+            <h4>Metallic sidetable lamp</h4>
+            <div class="btn btn-primary">£5.00</div>
+        </div>
+        <div class="column">
+           
+               <a href="">
+                <img width="250" height="250" src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0009_minh-pham-Wn1gmozpNZc-unsplash-300x300.jpg" /> 
+               </a>
+            
+            <h4>Wooden picture frame</h4>
+            <div class="btn btn-primary">£5.00</div>
+            </div>
+            <div class="column">
+                
+                    <a href=""><img width="250" height="250" src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0008_minh-pham-7pCFUybP_P8-unsplash-300x300.jpg" /> 
+                    </a>
+                
+                <h4>Bedroom mirror</h4>
+                <div class="btn btn-primary">£5.00</div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            
+               <a href=""> <img width="250" height="250" src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0007_christopher-burns-56tCOHi5OzA-unsplash-300x300.jpg"  /> 
+               </a>
+           
+        <h4>Minimalistic chair</h4>
+        <div class="btn btn-primary">£5.00</div>
+        </div>
+        <div class="column">
+           
+               <a href=""> <img width="250" height="250" src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0006_kari-shea-3_cyj5YkhTs-unsplash-300x300.jpg" >
+               </a>
+            <h4>Cactus succulent plant</h4>
+            <div class="btn btn-primary">£5.00</div>
+        </div>
+        <div class="column">
+            
+                <a href=""><img width="250" height="250" src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0005_stephanie-harvey-80xePqQVKzs-unsplash-300x300.jpg" >
+                </a>
+                
+           
+            <h4>Decorative pillow</h4>
+            <div class="btn btn-primary">£5.00</div>
+            </div>
+            <div class="column">
+               
+                   <a href=""> <img width="250" height="250" src="https://jevelin.shufflehound.com/minimal-furniture-shop/wp-content/uploads/sites/42/2018/03/5559331632_2_1_1_0004_bedroom-bulb-interior-decoration-lamp-545048-300x300.jpg"/> 
+                   </a>
+                
+                <h4>Metatallic table lamp</h4>
+                <div class="btn btn-primary">£5.00</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+ 
+ 
+ 
+ 
+ 
+    <br>
+    <br>
+    <br>
+    <br>
+
+   <div class="el8">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>Join the newsletter</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris </p>
+    <form>
+        <textarea name="text" row="5%" cols="60%" placeholder="Please enter your email id"></textarea>
+
+    </form>
+    <button class="Subscribe">Subscribe</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   </div>
+   <br>
+   <br>
+   <br>
+
+
+
+
+
+
+   <br>
+   <br>
+   <br>
+   <div class="el9">
+    <div class="el9a">
+        <h3>PAYMENT METHOD</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer</p>
+        <p> adipiscing elit, sed diam nonummy nibh</p><p> euismod tincidunt ut laoreet dolore.</p>
+        <img src="c:\Users\madhava venkata sai\Downloads\visa-logo.png" alt="">
+        <img src="c:\Users\madhava venkata sai\Downloads\card.png" alt="">
+        <img src="c:\Users\madhava venkata sai\Downloads\american-express.png" alt="">
+        <img src="c:\Users\madhava venkata sai\Downloads\paypal-logo.png" alt="">
+        <img src="c:\Users\madhava venkata sai\Downloads\card (1).png" alt="">
+    </div>
+    <div class="el9b">
+        <h4>TOP RATED</h4>
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\5559331632_2_1_1_0011_jeremy-lwanga-uUwEAW5jFLE-unsplash-300x300.jpg" alt="">
+        <h5>Table succulent plant</h5>
+        <div class="btn btn-primary">$5.00</div>
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\5559331632_2_1_1_0010_sincerely-media-VDPauwJ_sHo-unsplash-300x300.jpg" alt="">
+        <h5>Metallic sidetable lamp</h5>
+        <div class="btn btn-primary">$5.00</div>
+        <img src="c:\Users\madhava venkata sai\Downloads\Minimal Furniture Shop – Just another Jevelin WordPress Theme site_files\5559331632_2_1_1_0009_minh-pham-Wn1gmozpNZc-unsplash-300x300.jpg" alt="">
+        <h5>Wooden picture frame</h5>
+        <div class="btn btn-primary">$5.00</div>
+    </div>
+    <div class="el9c">
+        <h3>SHOPPING GUIDE</h3>
+        <h5>FAQ</h5>
+        <h5>Shipment</h5>
+        <h5>Returns</h5>
+        <h5>Policies</h5>
+        <h5>Gift cards</h5>
+        <h5>Clothing care</h5>
+        <h5>Purchase conditions</h5>
+    </div>
+    <div class="el9d">
+        <h3>COMPANY</h3>
+        <h5>About us</h5>
+        <h5>Press</h5>
+        <h5>Our team</h5>
+        <h5>Offices</h5>
+
+
+
+   </div>
+   </div>
+</body>
+</html>
